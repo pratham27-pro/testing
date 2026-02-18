@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import QuantitySelector from "../components/QuantitySelector";
-import { Category, Product } from "../entities";
+import type { Category, Product } from "../entities";
 
 function BrowseProducts() {
   const [products, setProducts] = useState<Product[]>([]);

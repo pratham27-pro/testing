@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { useEffect, useState } from "react";
-import { Product } from "../entities";
+import type { Product } from "../entities";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);

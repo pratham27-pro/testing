@@ -3,10 +3,10 @@ import { Box, Button, Select, TextField } from "@radix-ui/themes";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Product } from "../entities";
+import type { Product } from "../entities";
 import useCategories from "../hooks/useCategories";
 import {
-  ProductFormData,
+  type ProductFormData,
   productFormSchema,
 } from "../validationSchemas/productSchema";
 import ErrorMessage from "./ErrorMessage";
