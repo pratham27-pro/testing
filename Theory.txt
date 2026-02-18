@@ -1,0 +1,15 @@
+Unit test - They verify the correctness of individual units or components of an application in isolation. These units could be fns, classes or even small modules.
+
+Integration Test - They verify how the different components of the application works together as a whole and with each other. These include data flow problems, compatibility issues or communication between modules.
+
+End-to-End Test - They are the broadest type of test which tests the entire application as a whole.
+** E2E tests simulate user interactions with the entire system.
+
+
+Test-driven Development:
+1. Start by writing a failing test.
+2. Write just enough code to make the test pass.
+3. Refactor if necessary.
+
+**TDD produces code that is 100% covered by the tests.
+**TDD prevents us from over-engineering things.
