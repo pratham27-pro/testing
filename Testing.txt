@@ -1,0 +1,28 @@
+TESTING COMPONENTS
+
+There're basically 2 things to test for components-
+1. How they render:
+Components should render correctly under various conditions. If a component has props, we should pass different props and verify that it renders correctly.
+
+2. How they respond to user actions:
+We should simulate different events like the clicks or keyboard inputs and verify that they are reacting for the same as expected.
+
+**Test the Behavior and Not the Implementation**
+
+
+Testing pyramid ===>
+                    /\
+                   /  \
+                  /    \
+                 /  E2E \
+                /        \
+               /----------\
+              /            \
+             /  Integration \
+            /----------------\
+           /                  \
+          /        Unit        \
+         /______________________\
+
+> However we lean towards the Integration tests more than the Unit tests.
+
