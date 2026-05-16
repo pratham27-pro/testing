@@ -1,15 +1,17 @@
 import type { User } from "../entities";
 
-const UserAccount = ({ user }: { user: User }) => {
+const UserList = ({ users }: { users: User[] }) => {
+  if (users.length === 0) return <p>No users available</p>;
+
   return (
-    <>
-      <h2>User Profile</h2>
-      {user.isAdmin && <button>Edit</button>}
-      <div>
-        <strong>Name:</strong> {user.name}
-      </div>
-    </>
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>
+          <a href={`/users/${user.id}`}>{user.name}</a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
-export default UserAccount;
+export default UserList;
